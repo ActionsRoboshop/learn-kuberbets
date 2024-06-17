@@ -4,6 +4,7 @@ metadata:
   name: deploy1
 spec:
   replicas: 6
+  minReadySeconds: 30
   selector:
     matchLabels:
       app: nginx
@@ -15,13 +16,10 @@ spec:
     spec:
       containers:
        - name: c1
-         image: chaitu1812/nginx:v2.0.0
+         image: chaitu1812/nginx:v1.0.0
          ports:
           - containerPort: 80
             name: nginx
-          - containerPort: 80
-            name: nginx1
-
 ---
 apiVersion: v1
 kind: Service
@@ -33,7 +31,7 @@ spec:
   type: NodePort
   ports:
     - targetPort: nginx
-      port: 65531
+      port: 80
 
 
 
