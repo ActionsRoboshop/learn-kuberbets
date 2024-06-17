@@ -18,6 +18,8 @@ spec:
          ports:
           - containerPort: 80
             name: nginx
+          - containerPort: 80
+            name: nginx1
 
 ---
 apiVersion: v1
