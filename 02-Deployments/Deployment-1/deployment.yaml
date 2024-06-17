@@ -30,6 +30,7 @@ spec:
   type: NodePort
   ports:
     - targetPort: nginx
+      port: 65531
 
 
 
