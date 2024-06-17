@@ -29,6 +29,7 @@ spec:
     app: nginx
   type: NodePort
   ports:
-    - name: nginx
+    - targetPort: nginx
+
 
 
