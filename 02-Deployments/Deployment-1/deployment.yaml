@@ -4,6 +4,10 @@ metadata:
   name: deploy1
 spec:
   replicas: 6
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
   minReadySeconds: 30
   selector:
     matchLabels:
@@ -16,7 +20,7 @@ spec:
     spec:
       containers:
        - name: c1
-         image: chaitu1812/nginx:v2.0.0
+         image: chaitu1812/nginx:v1.0.0
          ports:
           - containerPort: 80
             name: nginx
