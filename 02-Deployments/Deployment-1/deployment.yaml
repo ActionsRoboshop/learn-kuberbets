@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
        - name: c1
-         image: chaitu1812/nginx:v2.0.0
+         image: chaitu1812/nginx:v3.0.0
          ports:
           - containerPort: 80
             name: nginx
