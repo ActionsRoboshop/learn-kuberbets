@@ -13,13 +13,7 @@ spec:
     spec:
       containers:
         - name: c1
-          image: alpine
-          command: ["sh","-c"]
-          args:
-            - while [ 1 ]; do
-              echo "Hello-Chaitu";
-              sleep 1s;
-              done
+          image: nginx
           resources:
             requests:
               cpu: 50m
