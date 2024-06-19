@@ -20,3 +20,11 @@ spec:
               echo "Hello-Chaitu";
               sleep 1s;
               done
+          resources:
+            requests:
+              cpu: 50m
+              memory: 160Mi
+            limits:
+              cpu: 100m
+              memory: 250Mi
+
