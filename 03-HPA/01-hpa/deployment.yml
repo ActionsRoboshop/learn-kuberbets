@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-alpine
+spec:
+  selector:
+    matchLabels:
+      app: alpine
+  template:
+    metadata:
+      labels:
+        app: alpine
+    spec:
+      containers:
+        - name: c1
+          image: alpine
+          command: ["sh","-c"]
+          args:
+            - while [ 1 ]; do
+              echo "Hello-Chaitu";
+              sleep 1s;
+              done
