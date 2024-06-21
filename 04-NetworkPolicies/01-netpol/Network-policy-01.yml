@@ -5,9 +5,7 @@ kind: NetworkPolicy
 metadata:
   name: deny-all-traffic
 spec:
-  podSelector:
-      matchLabels:
-        app: netpol
+  podSelector: {}
   policyTypes:
     - Ingress
     - Egress
