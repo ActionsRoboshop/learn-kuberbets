@@ -6,7 +6,6 @@ metadata:
   name: deny-all-traffic
 spec:
   podSelector:
-    selector:
       matchLabels:
         app: netpol
   policyTypes:
