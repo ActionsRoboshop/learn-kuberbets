@@ -1,3 +1,22 @@
+#apiVersion: v1
+#kind: Pod
+#metadata:
+#  name: pod1
+#spec:
+#  containers:
+#    - name: c1
+#      image: nginx
+#      ports:
+#        - containerPort: 80
+#      volumeMounts:
+#        - name: empty-volume
+#          mountPath: /usr/share/nginx/html/
+#          # readOnly: true
+#  volumes:
+#    - name: empty-volume
+#      emptyDir: {}
+
+---
 apiVersion: v1
 kind: Pod
 metadata:
@@ -11,6 +30,12 @@ spec:
       volumeMounts:
         - name: empty-volume
           mountPath: /usr/share/nginx/html/
+    - name: c2
+      image: alpine
+      args: ["sh","-c","sleep 400s"]
+      volumeMounts:
+        - name: empty-volume
+          mountPath: /scratch
           # readOnly: true
   volumes:
     - name: empty-volume
