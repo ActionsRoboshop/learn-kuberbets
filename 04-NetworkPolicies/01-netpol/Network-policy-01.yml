@@ -10,4 +10,4 @@ spec:
     matchLabels:
       app: nginx
   policyTypes:
-    - Egress
+    - Ingress
