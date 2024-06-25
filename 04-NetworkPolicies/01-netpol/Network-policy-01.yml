@@ -10,5 +10,5 @@ spec:
       app: netpol1
   policyTypes:
     - Ingress
-    - Egress
+
 
