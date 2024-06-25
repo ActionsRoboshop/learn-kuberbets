@@ -11,3 +11,4 @@ spec:
       app: nginx
   policyTypes:
     - Ingress
+    - Egress
