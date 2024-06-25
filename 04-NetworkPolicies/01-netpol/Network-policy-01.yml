@@ -9,5 +9,5 @@ spec:
     matchLabels:
       app: netpol1
   policyTypes:
-    - Egress
     - Ingress
+    - Egress
