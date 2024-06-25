@@ -10,3 +10,4 @@ spec:
       app: netpol1
   policyTypes:
     - Egress
+    - Ingress
