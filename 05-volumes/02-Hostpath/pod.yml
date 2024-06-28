@@ -13,6 +13,7 @@ spec:
           readOnly: true
   volumes:
     - name: nginx-vol
-      hostPath:
-        path: /tmp/hoop
+      persistentVolumeClaim:
+        name: nginx-claim
+
 
