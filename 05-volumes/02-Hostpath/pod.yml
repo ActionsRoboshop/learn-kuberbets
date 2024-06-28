@@ -7,10 +7,10 @@ spec:
     - name: c1
       image: nginx
       volumeMounts:
-        - name: nginx_vol
+        - name: nginx-vol
           mountPath: /usr/share/nginx/html
   volumes:
-    - name: nginx_vol
+    - name: nginx-vol
       hostPath:
         path: /tmp/hoop
 
