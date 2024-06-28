@@ -23,7 +23,7 @@ metadata:
   resources:
     requests:
       storage: 1Gi
-  accessModes:
+  accessMode:
     - ReadWriteOnce
 
 
