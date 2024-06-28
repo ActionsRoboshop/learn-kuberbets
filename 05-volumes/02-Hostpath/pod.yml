@@ -15,5 +15,15 @@ spec:
     - name: nginx-vol
       persistentVolumeClaim:
         claimName: nginx-claim
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: nginx-claim
+  resources:
+    requests:
+      storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
 
 
