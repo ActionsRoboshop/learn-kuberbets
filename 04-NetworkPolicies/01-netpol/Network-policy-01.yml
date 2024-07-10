@@ -11,3 +11,7 @@ spec:
       app: nginx
   policyTypes:
     - Ingress
+  ingress:
+    - namespaceSelector:
+        matchLabels:
+          project: dev-ns
