@@ -6,7 +6,9 @@ metadata:
   name: deny-all-traffic
   namespace: test-ns
 spec:
-  podSelector: {}
+  podSelector:
+    matchLabels:
+      app: nginx
   policyTypes:
     - Egress
     - Ingress
