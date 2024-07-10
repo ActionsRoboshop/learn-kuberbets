@@ -14,9 +14,6 @@ spec:
     - Egress
   ingress:
     - from:
-       - namespaceSelector:
-            matchLabels:
-              project: dev
-         podSelector:
+       -  podSelector:
             matchLabels:
               role: dev
