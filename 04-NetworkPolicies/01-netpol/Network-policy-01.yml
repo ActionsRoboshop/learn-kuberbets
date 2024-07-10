@@ -12,6 +12,7 @@ spec:
   policyTypes:
     - Ingress
   ingress:
-    - namespaceSelector:
-        matchLabels:
-          project: dev-ns
+    - from:
+        - podSelector:
+            matchLabels:
+              role: dev-ns
