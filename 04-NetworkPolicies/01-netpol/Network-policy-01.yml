@@ -13,6 +13,9 @@ spec:
     - Ingress
   ingress:
     - from:
-        - podSelector:
-            matchLabels:
-              role: dev-ns
+       - namespaceSelector:
+              matchLabels:
+                project: dev
+#        - podSelector:
+#            matchLabels:
+#              role: dev-ns
